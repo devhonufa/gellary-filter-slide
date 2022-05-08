@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Protfolio Image</title>
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+    <section>
+        <div class="container">
+            <div class="row">
+                <div class="col-xl-12">
+                    <ul class="protfolio-menu">
+                        <li data-filter ="*">All</li>
+                        <li data-filter =".web">Web</li>
+                        <li data-filter =".software">Software</li>
+                        <li data-filter =".graphic">Graphic</li>
+                        <li data-filter =".seo">SEO</li>
+
+                    </ul>
+                </div>
+            </div>
+            <div class="row protfolio-items">
+                <div class="col-xl-4 web software seo">
+                    <div class="singles-protfolio">
+                        <img src="assets/img/pic (1).jpg" alt="">
+                        <div class="protfolio-overly">
+                            <h4>project title</h4>
+                            <p>Lorem ipsum dolor sit, amet</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xl-4 software graphic seo">
+                    <div class="singles-protfolio">
+                        <img src="assets/img/pic (2).jpg" alt="">
+                        
+                        <div class="protfolio-overly">
+                            <h4>project title</h4>
+                            <p>Lorem ipsum dolor sit, amet</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xl-4 web graphic">
+                    <div class="singles-protfolio">
+                        <img src="assets/img/pic (6).jpg" alt="">
+                        <div class="protfolio-overly">
+                            <h4>project title</h4>
+                            <p>Lorem ipsum dolor sit, amet</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xl-4 software graphic seo">
+                    <div class="singles-protfolio">
+                        <img src="assets/img/pic (3).jpg" alt="">
+                        <div class="protfolio-overly">
+                            <h4>project title</h4>
+                            <p>Lorem ipsum dolor sit, amet</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xl-4 web software seo">
+                    <div class="singles-protfolio">
+                        <img src="assets/img/pic (5).jpg" alt="">
+                        <div class="protfolio-overly">
+                            <h4>project title</h4>
+                            <p>Lorem ipsum dolor sit, amet</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xl-4 software graphic seo">
+                    <div class="singles-protfolio">
+                        <img src="assets/img/pic (6).jpg" alt="">
+                        <div class="protfolio-overly">
+                            <h4>project title</h4>
+                            <p>Lorem ipsum dolor sit, amet</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xl-4 software graphic seo">
+                    <div class="singles-protfolio">
+                        <img src="assets/img/pic (1).jpg" alt="">
+                        <div class="protfolio-overly">
+                            <h4>project title</h4>
+                            <p>Lorem ipsum dolor sit, amet</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xl-4 software graphic">
+                    <div class="singles-protfolio">
+                        <img src="assets/img/pic (4).jpg" alt="">
+                        <div class="protfolio-overly">
+                            <h4>project title</h4>
+                            <p>Lorem ipsum dolor sit, amet</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xl-4 software graphic">
+                    <div class="singles-protfolio">
+                        <img src="assets/img/pic (6).jpg" alt="">
+                        <div class="protfolio-overly">
+                            <h4>project title</h4>
+                            <p>Lorem ipsum dolor sit, amet</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <script src="assets/js/jquery-3.2.1.slim.min.js"></script>
+    <script src="assets/js/isotope.min.js"></script>
+        <script>
+        // init Isotope
+            var $grid = $('.protfolio-items').isotope({
+            // options
+            });
+            // filter items on button click
+            $('.protfolio-menu').on( 'click', 'li', function() {
+            var filterValue = $(this).attr('data-filter');
+            $grid.isotope({ filter: filterValue });
+            });
+    </script>
+</body>
+</html>
